@@ -1,0 +1,26 @@
+llm:
+  provider: anthropic
+  models:
+    reasoning: "claude-sonnet-4-6"
+    fast: "claude-haiku-4-5-20251001"
+  default_max_tokens: 1024
+  default_temperature: 0.2
+
+agents:
+  rca:
+    model: reasoning
+    temperature: 0.2
+  decision:
+    model: reasoning
+    temperature: 0.1
+  rag_summarizer:
+    model: fast
+    temperature: 0.3
+
+detection:
+  zscore_threshold: 3.0
+  rolling_window: 60
+
+approval:
+  high_confidence_threshold: 85
+  medium_confidence_threshold: 60
