@@ -1,0 +1,23 @@
+# NOTE: kafka-python is unmaintained and breaks on Python 3.12 (ModuleNotFoundError:
+# kafka.vendor.six.moves). Use the community fork kafka-python-ng instead - same API,
+# drop-in replacement, "import kafka" still works unchanged.
+langchain
+langgraph
+langchain-anthropic
+fastapi
+uvicorn[standard]
+kafka-python-ng
+chromadb
+sentence-transformers==3.3.1
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.5.2
+psycopg2-binary==2.9.10
+pymongo==4.10.1
+sqlalchemy==2.0.36
+python-dotenv==1.0.1
+pydantic==2.9.2
+pyyaml==6.0.2
+pytest==8.3.3
+pytest-mock==3.14.0
+ 
